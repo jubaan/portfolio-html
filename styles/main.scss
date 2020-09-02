@@ -1,0 +1,155 @@
+@import 'fonts.scss';
+
+*,
+* a {
+  font-family: 'Roboto', 'Helvetica', 'Arial', 'sans-serif';
+  text-decoration: none;
+  color: #01161e;
+}
+
+body {
+  height: 100%;
+}
+
+.offscreen {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+.bg-hero {
+  background: linear-gradient( 180deg, rgba(255, 255, 255, 0.3) 0%, rgba(0, 0, 0, 0.6) 75%), url('https://images.unsplash.com/photo-1501159599894-155982264a55?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80') 50% 70% no-repeat;
+  background-size: cover;
+  z-index: -1;
+}
+
+.blur {
+  -webkit-backdrop-filter: blur(2px);
+  backdrop-filter: blur(2px);
+  z-index: 99;
+  height: 100%;
+}
+
+@supports (-webkit-backdrop-filter: blur(2px)) or (backdrop-filter: blur(2px)) {
+  .blur {
+    -webkit-backdrop-filter: blur(2px);
+    backdrop-filter: blur(2px);
+  }
+}
+
+header {
+  width: 100%;
+
+  .container {
+    max-width: 77rem;
+    margin: auto;
+    padding-left: 6rem;
+    padding-right: 6rem;
+  }
+
+  .nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 3rem;
+
+    .welcome {
+      display: flex;
+      align-items: center;
+      padding: 0.1rem 1.5rem 0.1rem 0.1rem;
+      background-color: #fff;
+      border-radius: 50px;
+
+      .profile-pic {
+        height: 2.5rem;
+        width: 2.5rem;
+        border-radius: 100%;
+        margin-right: 1rem;
+      }
+
+      .hello {
+      font-family: 'Permanent Marker', 'sans-serif';
+      font-size: 1.5rem;
+      }
+    }
+
+    .social {
+      display: flex;
+      flex-direction: row;
+
+      .icon {
+        font-size: 1.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 1rem;
+      }
+    }
+  }
+
+  .hero {
+    .title {
+      font-weight: 700;
+      font-size: 3rem;
+      color: #fff;
+      margin-top: 8rem;
+
+      .name {
+        font-family: 'Permanent Marker', 'sans-serif';
+        font-size: 3.5rem;
+        font-weight: 400;
+      }
+    }
+
+    hr {
+      border-bottom: 0.3rem solid #fff;
+      width: 9rem;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+    }
+    .description {
+      font-size: 1.5rem;
+      margin-bottom: 4rem;
+      color: #fff;
+
+      .web-development {
+        font-family: 'Permanent Marker', 'sans-serif';
+        color: #f7ec59;
+      }
+    }
+
+
+    .info {
+      display: flex;
+      align-items: center;
+      margin-bottom: 1rem;
+
+      .email {
+        padding: 0.8rem 1.5rem;
+        background-color: #fff;
+        border-radius: 50px;
+        margin-right: 1rem;
+      }
+
+      .mobile {
+        color: #fff;
+      }
+    }
+
+    .availability {
+      font-size: 0.9rem;
+      color: #fff;
+      padding-bottom: 3rem;
+
+      .available {
+        color: #37ff8b;
+        margin-right: 1rem;
+      }
+    }
+  }
+}

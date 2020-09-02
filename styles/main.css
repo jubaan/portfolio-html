@@ -1,3 +1,78 @@
+@font-face {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/oswald/v35/TK3iWkUHHAIjg752GT8G.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/oswald/v35/TK3iWkUHHAIjg752GT8G.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/oswald/v35/TK3iWkUHHAIjg752GT8G.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "Permanent Marker";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Permanent Marker Regular"), local("PermanentMarker-Regular"), url(https://fonts.gstatic.com/s/permanentmarker/v9/Fh4uPib9Iyv2ucM6pGQMWimMp004La2Cfw.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local("Roboto Bold"), local("Roboto-Bold"), url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmWUlfBBc4.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Roboto"), local("Roboto-Regular"), url(https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Mu4mxK.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: local("Roboto Light"), local("Roboto-Light"), url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmSU5fBBc4.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "Roboto";
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Roboto Italic"), local("Roboto-Italic"), url(https://fonts.gstatic.com/s/roboto/v20/KFOkCnqEu92Fr1Mu51xIIzI.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+*,
+* a {
+  font-family: "Roboto", "Helvetica", "Arial", "sans-serif";
+  text-decoration: none;
+  color: #01161e;
+}
+
+body {
+  height: 100%;
+}
+
 .offscreen {
   border: 0;
   clip: rect(0 0 0 0);
@@ -8,3 +83,117 @@
   position: absolute;
   width: 1px;
 }
+
+.bg-hero {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.3) 0%, rgba(0, 0, 0, 0.6) 75%), url("https://images.unsplash.com/photo-1501159599894-155982264a55?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80") 50% 70% no-repeat;
+  background-size: cover;
+  z-index: -1;
+}
+
+.blur {
+  -webkit-backdrop-filter: blur(2px);
+  backdrop-filter: blur(2px);
+  z-index: 99;
+  height: 100%;
+}
+
+@supports (-webkit-backdrop-filter: blur(2px)) or (backdrop-filter: blur(2px)) {
+  .blur {
+    -webkit-backdrop-filter: blur(2px);
+    backdrop-filter: blur(2px);
+  }
+}
+header {
+  width: 100%;
+}
+header .container {
+  max-width: 77rem;
+  margin: auto;
+  padding-left: 6rem;
+  padding-right: 6rem;
+}
+header .nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 3rem;
+}
+header .nav .welcome {
+  display: flex;
+  align-items: center;
+  padding: 0.1rem 1.5rem 0.1rem 0.1rem;
+  background-color: #fff;
+  border-radius: 50px;
+}
+header .nav .welcome .profile-pic {
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: 100%;
+  margin-right: 1rem;
+}
+header .nav .welcome .hello {
+  font-family: "Permanent Marker", "sans-serif";
+  font-size: 1.5rem;
+}
+header .nav .social {
+  display: flex;
+  flex-direction: row;
+}
+header .nav .social .icon {
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 1rem;
+}
+header .hero .title {
+  font-weight: 700;
+  font-size: 3rem;
+  color: #fff;
+  margin-top: 8rem;
+}
+header .hero .title .name {
+  font-family: "Permanent Marker", "sans-serif";
+  font-size: 3.5rem;
+  font-weight: 400;
+}
+header .hero hr {
+  border-bottom: 0.3rem solid #fff;
+  width: 9rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+header .hero .description {
+  font-size: 1.5rem;
+  margin-bottom: 4rem;
+  color: #fff;
+}
+header .hero .description .web-development {
+  font-family: "Permanent Marker", "sans-serif";
+  color: #f7ec59;
+}
+header .hero .info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+header .hero .info .email {
+  padding: 0.8rem 1.5rem;
+  background-color: #fff;
+  border-radius: 50px;
+  margin-right: 1rem;
+}
+header .hero .info .mobile {
+  color: #fff;
+}
+header .hero .availability {
+  font-size: 0.9rem;
+  color: #fff;
+  padding-bottom: 3rem;
+}
+header .hero .availability .available {
+  color: #37ff8b;
+  margin-right: 1rem;
+}
+
+/*# sourceMappingURL=main.css.map */
