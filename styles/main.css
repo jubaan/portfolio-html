@@ -69,10 +69,6 @@
   color: #01161e;
 }
 
-body {
-  height: 100%;
-}
-
 .offscreen {
   border: 0;
   clip: rect(0 0 0 0);
@@ -103,14 +99,22 @@ body {
     backdrop-filter: blur(2px);
   }
 }
-header {
+header,
+main,
+footer {
   width: 100%;
 }
-header .container {
+header .container,
+main .container,
+footer .container {
   max-width: 77rem;
   margin: auto;
   padding-left: 6rem;
   padding-right: 6rem;
+}
+
+header {
+  width: 100%;
 }
 header .nav {
   display: flex;
