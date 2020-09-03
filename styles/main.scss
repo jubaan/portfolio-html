@@ -220,12 +220,58 @@ main {
         margin-top: 7rem;
 
         .name {
-          font-size: 3rem;
+          font-size: 2.7rem;
         }
       }
 
       .description {
         font-size: 1.4rem;
+      }
+
+      .open-to-work {
+        font-size: 1.3rem;
+        margin-bottom: 5rem;
+      }
+      .availability {
+        padding-bottom: 5rem;
+      }
+    }
+  }
+
+  nav {
+  }
+
+  main {
+    .about-me {
+
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  header,
+  nav,
+  main,
+  footer {
+    .container {
+      padding-left: 3rem;
+      padding-right: 3rem;
+    }
+  }
+
+  header {
+    .hero {
+      .title {
+        font-size: 1.8rem;
+        margin-top: 6rem;
+
+        .name {
+          font-size: 2.1rem;
+        }
+      }
+
+      .description {
+        font-size: 1.1rem;
       }
 
       .open-to-work {

@@ -245,10 +245,37 @@ footer .container {
     margin-top: 7rem;
   }
   header .hero .title .name {
-    font-size: 3rem;
+    font-size: 2.7rem;
   }
   header .hero .description {
     font-size: 1.4rem;
+  }
+  header .hero .open-to-work {
+    font-size: 1.3rem;
+    margin-bottom: 5rem;
+  }
+  header .hero .availability {
+    padding-bottom: 5rem;
+  }
+}
+@media only screen and (max-width: 768px) {
+  header .container,
+nav .container,
+main .container,
+footer .container {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
+  header .hero .title {
+    font-size: 1.8rem;
+    margin-top: 6rem;
+  }
+  header .hero .title .name {
+    font-size: 2.1rem;
+  }
+  header .hero .description {
+    font-size: 1.1rem;
   }
   header .hero .open-to-work {
     font-size: 1.3rem;
