@@ -23,8 +23,10 @@ html {
 }
 
 .bg-hero {
-  background: linear-gradient( 180deg, rgba(255, 255, 255, 0.3) 0%, rgba(0, 0, 0, 0.6) 75%), url('https://images.unsplash.com/photo-1501159599894-155982264a55?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80') 50% 70% no-repeat;
-  background-size: cover;
+  background: linear-gradient( 180deg, rgba(255, 255, 255, 0.3) 0%, rgba(0, 0,
+  0, 0.6) 75%),
+  url('https://images.unsplash.com/photo-1501159599894-155982264a55?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80')
+    50% 70% / cover no-repeat;
   z-index: -1;
 }
 
@@ -42,6 +44,7 @@ html {
 }
 
 header,
+nav,
 main,
 footer {
   width: 100%;
@@ -60,8 +63,6 @@ header {
   height: 100%;
 
   .nav {
-    position: sticky;
-    top: 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -73,6 +74,7 @@ header {
       padding: 0.1rem 1.5rem 0.1rem 0.1rem;
       background-color: #f2efea;
       border-radius: 50px;
+      box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
 
       .profile-pic {
         height: 2.5rem;
@@ -116,16 +118,19 @@ header {
   }
 
   .hero {
+    text-shadow: 0 1px 1px #313e50;
+
     .title {
       font-weight: 700;
       font-size: 3rem;
       color: #f2efea;
-      margin-top: 10rem;
+      margin-top: 8rem;
 
       .name {
         font-family: 'Permanent Marker', 'sans-serif';
         font-size: 3.5rem;
         font-weight: 400;
+        text-shadow: none;
       }
     }
 
@@ -165,6 +170,8 @@ header {
         background-color: #f2efea;
         border-radius: 50px;
         margin-right: 1rem;
+        text-shadow: none;
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
       }
 
       .mobile {
@@ -175,27 +182,22 @@ header {
     .availability {
       font-size: 1rem;
       color: #f2efea;
-      padding-bottom: 3rem;
+      padding-bottom: 6rem;
 
       .available {
         color: #37ff8b;
         margin-right: 1rem;
       }
     }
-
-    .arrow-down {
-      font-size: 2rem;
-      color: #f2efea;
-    }
   }
+}
+
+nav {
 }
 
 
 main {
-  .about-me,
-  .projects,
-  .solutions,
-  .contact {
-    height: 100vh;
+  .about-me {
+
   }
 }
