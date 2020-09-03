@@ -142,7 +142,7 @@ header {
     }
 
     .description {
-      font-size: 1.5rem;
+      font-size: 1.8rem;
       margin-bottom: 1rem;
       color: #f2efea;
 
@@ -199,5 +199,51 @@ nav {
 main {
   .about-me {
 
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  header,
+  nav,
+  main,
+  footer {
+    .container {
+      padding-left: 5rem;
+      padding-right: 5rem;
+    }
+  }
+
+  header {
+    .hero {
+      .title {
+        font-size: 2.3rem;
+        margin-top: 7rem;
+
+        .name {
+          font-size: 3rem;
+        }
+      }
+
+      .description {
+        font-size: 1.4rem;
+      }
+
+      .open-to-work {
+        font-size: 1.3rem;
+        margin-bottom: 5rem;
+      }
+      .availability {
+        padding-bottom: 5rem;
+      }
+    }
+  }
+
+  nav {
+  }
+
+  main {
+    .about-me {
+
+    }
   }
 }
